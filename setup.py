@@ -81,22 +81,22 @@ except FileNotFoundError:
     pass
 
 
-with open(ROOT / 'README.rst', 'r', encoding='utf-8') as f:
+with open(ROOT / 'README.md', 'r', encoding='utf-8') as f:
     README = f.read()
 
 
 setup(
-    name='jishaku',
+    name='jishaku-braille-j',
     author='Devon (Gorialis) R',
-    url='https://github.com/Gorialis/jishaku',
+    url='https://github.com/iomintz/jishaku',
 
     license='MIT',
-    description='A discord.py extension including useful tools for bot development and debugging.',
+    description='A discord.py extension including useful tools for bot development and debugging (Braille J edition).',
     long_description=README,
-    long_description_content_type='text/x-rst',
+    long_description_content_type='text/markdown',
     project_urls={
         'Documentation': 'https://jishaku.readthedocs.io/en/latest/',
-        'Code': 'https://github.com/Gorialis/jishaku',
+        'Code': 'https://github.com/iomintz/jishaku',
         'Issue tracker': 'https://github.com/Gorialis/jishaku/issues'
     },
 
@@ -108,7 +108,7 @@ setup(
 
     extras_require=EXTRA_REQUIRES,
 
-    download_url='https://github.com/Gorialis/jishaku/archive/{}.tar.gz'.format(VERSION),
+    download_url='https://github.com/iomintz/jishaku/archive/{}.tar.gz'.format(VERSION),
 
     keywords='jishaku discord.py discord cog repl extension',
     classifiers=[
